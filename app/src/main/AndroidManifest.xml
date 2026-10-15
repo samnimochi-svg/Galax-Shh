@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk tools:overrideLibrary="androidx.core.ktx, androidx.core, androidx.activity, androidx.activity.compose, androidx.lifecycle.runtime.compose, androidx.lifecycle.runtime.ktx, androidx.lifecycle.viewmodel.compose, androidx.compose.ui, androidx.compose.material3" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!-- Optional permission for external automation broadcasts -->
+    <permission
+        android:name="com.aistudio.galaxshh.permission.CONTROL_CAMERA_SOUND"
+        android:protectionLevel="normal" />
+    <uses-permission android:name="com.aistudio.galaxshh.permission.CONTROL_CAMERA_SOUND" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <!-- Main UI Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <!-- Shortcut Action Dispatcher Activity -->
+        <activity
+            android:name=".ShortcutExecutionActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.aistudio.galaxshh.action.TOGGLE" />
+                <action android:name="com.aistudio.galaxshh.action.MUTE_ON" />
+                <action android:name="com.aistudio.galaxshh.action.MUTE_OFF" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Tasker Plugin Configuration Activity -->
+        <activity
+            android:name=".tasker.TaskerEditActivity"
+            android:exported="true"
+            android:label="@string/tasker_plugin_title"
+            android:icon="@drawable/app_icon_shh"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+                <category android:name="com.twofortyfouram.locale.intent.category.PLUGIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Tasker Plugin Fire Receiver -->
+        <receiver
+            android:name=".tasker.TaskerFireReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+            </intent-filter>
+        </receiver>
+
+        <!-- External Automation Receiver (MacroDroid, Modes & Routines, Broadcasts, Notification Actions) -->
+        <receiver
+            android:name=".receiver.ExternalAutomationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.aistudio.galaxshh.action.TOGGLE" />
+                <action android:name="com.aistudio.galaxshh.action.MUTE_ON" />
+                <action android:name="com.aistudio.galaxshh.action.MUTE_OFF" />
+                <action android:name="com.aistudio.galaxshh.action.MUTE_SYSTEM_ONLY" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Background Status Monitor Service for Real-time Notification & Quick Settings Sync -->
+        <service
+            android:name=".service.CameraMuteStatusMonitorService"
+            android:exported="false" />
+
+        <!-- Boot Completed Receiver for Automatic Re-application -->
+        <receiver
+            android:name=".receiver.BootCompletedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Quick Settings Tiles -->
+        <service
+            android:name=".tile.CameraMuteToggleTileService"
+            android:icon="@drawable/ic_tile_shh"
+            android:label="@string/tile_toggle_label"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".tile.CameraMuteOnTileService"
+            android:icon="@drawable/ic_tile_shh"
+            android:label="@string/tile_mute_on_label"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".tile.CameraMuteOffTileService"
+            android:icon="@drawable/ic_tile_sound_on"
+            android:label="@string/tile_mute_off_label"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Accessibility Service for GLOBAL_ACTION_HOME -->
+        <service
+            android:name=".service.CameraMuteAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:label="@string/accessibility_service_label"
+            android:description="@string/accessibility_service_desc"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+    </application>
+
+</manifest>

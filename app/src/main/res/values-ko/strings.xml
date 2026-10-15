@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Galax-Shh</string>
+    <string name="app_subtitle">상황에 맞춰 셔터 소리를 전환</string>
+    <string name="app_header_subtitle">상황에 맞춰 셔터 소리를 전환</string>
+    <string name="action_refresh">새로고침</string>
+    <string name="toast_reloaded">최신 상태를 새로고침했습니다</string>
+
+    <!-- Tiles -->
+    <string name="tile_toggle_label">무음 전환</string>
+    <string name="tile_mute_on_label">카메라 무음</string>
+    <string name="tile_mute_off_label">카메라 소리 켬</string>
+    <string name="tile_sub_muted">무음 중 (0)</string>
+    <string name="tile_sub_unmuted">소리 켬 (1)</string>
+    <string name="tile_sub_volume_active">음량 있음 (%d)</string>
+    <string name="tile_sub_mute_applied">무음 적용 중</string>
+    <string name="tile_sub_mute_unapplied">미적용</string>
+    <string name="tile_sub_sound_active">소리 켬 (활성)</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_toggle_short">무음 전환</string>
+    <string name="shortcut_toggle_long">카메라 무음 토글 전환</string>
+    <string name="shortcut_mute_on_short">카메라 무음</string>
+    <string name="shortcut_mute_on_long">카메라 무음</string>
+    <string name="shortcut_mute_off_short">카메라 소리 켬</string>
+    <string name="shortcut_mute_off_long">카메라 소리 켬</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Galax-Shh 상태 알림</string>
+    <string name="notification_channel_desc">현재 카메라 셔터음 상태 및 실행 결과를 표시합니다</string>
+    <string name="notification_status_muted_title">셔터음 소리 끔(무음)</string>
+    <string name="notification_status_muted_desc">현재 카메라 셔터음이 무음으로 설정되어 있습니다</string>
+    <string name="notification_status_sound_on_title">셔터음 소리 켜짐</string>
+    <string name="notification_status_sound_on_desc">현재 카메라 셔터음이 일반 소리로 설정되어 있습니다</string>
+    <string name="notification_status_warning_vol_title">⚠️ 셔터음 소리 켜짐 (시스템 음량: %d)</string>
+    <string name="notification_status_warning_vol_desc">CSC 무음은 켜져 있지만, 시스템 음량(%d)으로 인해 셔터음이 울립니다!</string>
+    <string name="notification_status_muted_detail">셔터음이 비활성화되었습니다. 안심하고 촬영할 수 있습니다.</string>
+    <string name="notification_status_sound_on_detail">촬영 시 셔터음이 울립니다.</string>
+    <string name="notification_status_muted_subtext">무음 (완전 무음)</string>
+    <string name="notification_status_warning_subtext">⚠️ 소리 켜짐 (음량 주의)</string>
+    <string name="notification_status_sound_on_subtext">일반 (소리 켜짐)</string>
+    <string name="notification_action_mute_vol">음량 무음</string>
+    <string name="notification_action_restore_sound">소리 켜기</string>
+    <string name="notification_action_apply_mute">무음 적용</string>
+    <string name="notification_action_toggle">무음 전환</string>
+    <string name="notif_setting_title">Galax-Shh 상태 알림 (실시간 동기화)</string>
+    <string name="notif_setting_desc">퀵패널 전환뿐만 아니라 앱 내 변경, Tasker/모드 및 루틴 등 자동화 앱, 기기 음량 버튼 및 진동/무음 모드 변경을 실시간 감지하여 상태 알림을 즉시 동기화합니다.</string>
+    <string name="notif_setting_persistent_switch">알림창에 상시 표시</string>
+    <string name="notif_setting_persistent_on">알림창 및 잠금화면에 항상 표시 중</string>
+    <string name="notif_setting_persistent_off">알림창 항상 표시 꺼짐</string>
+    <string name="btn_mute_system_volume_guarantee">시스템 소리 무음 (완전 무음 보장)</string>
+    <string name="notif_setting_active_badge">실시간 동기화 활성</string>
+    <string name="notif_setting_refresh_btn">알림 새로고침</string>
+    <string name="toast_notif_refreshed">상태 알림이 갱신되었습니다</string>
+    <string name="nav_control">무음</string>
+    <string name="nav_integration">외부 연동</string>
+    <string name="nav_settings">설정</string>
+    <string name="nav_guide">가이드</string>
+    <string name="foldable_dual_pane_label">Galaxy Z Fold 최적화 듀얼 화면</string>
+    <string name="notification_mute_applied">카메라 무음 적용됨</string>
+    <string name="notification_sound_restored">카메라 소리 복원됨</string>
+    <string name="notification_error">[Galax-Shh] 설정 쓰기 실패</string>
+    <string name="notification_permission_required_title">Galax-Shh: 권한 필요</string>
+    <string name="notification_permission_required_desc">시스템 설정 수정 권한을 허용해주세요</string>
+    <string name="notification_error_title">Galax-Shh: 오류</string>
+    <string name="error_settings_update_failed">시스템 설정 업데이트에 실패했습니다</string>
+    <string name="error_unknown">알 수 없는 오류가 발생했습니다</string>
+
+    <!-- Setup Notifications -->
+    <string name="notification_channel_setup_name">Galax-Shh 초기 설정 및 안정화 안내</string>
+    <string name="notification_channel_setup_desc">절전 모드 방지 및 접근성 설정 안내 알림</string>
+    <string name="notif_battery_setup_title">[중요] 배터리 사용량을 \'제한 없음\'으로 설정</string>
+    <string name="notif_battery_setup_desc">딥슬립으로 인한 재부팅 후 자동 무음 실패를 방지하려면 탭하여 \'제한 없음\'을 허용하세요.</string>
+    <string name="notif_a11y_setup_title">카메라 실행 중 홈 버튼 연동 설정</string>
+    <string name="notif_a11y_setup_desc">카메라 실행 중 타일 전환을 즉시 적용하려면 탭하여 Galax-Shh 접근성을 \'켜짐\'으로 설정하세요.</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_label">Galax-Shh 홈 버튼 연동</string>
+    <string name="accessibility_service_desc">카메라 앱 실행 중 퀵 설정 타일을 조작했을 때 무음 설정을 즉시 적용하기 위해 홈 화면으로 이동합니다.</string>
+
+    <!-- Toasts & Execution Messages -->
+    <string name="toast_mute_applied_title">카메라 무음 중</string>
+    <string name="toast_sound_restored_title">카메라 셔터음 켜짐</string>
+    <string name="toast_sys_vol_muted">시스템 음량: 0</string>
+    <string name="toast_sys_vol_restored">시스템 음량: 복원</string>
+    <string name="toast_camera_navigated_home">적용을 위해 홈 화면으로 이동했습니다</string>
+    <string name="toast_camera_restart_needed">적용을 위해 카메라 앱을 다시 시작해주세요</string>
+    <string name="toast_mute_success_suffix"></string>
+    <string name="toast_permission_required">시스템 설정 수정 권한이 필요합니다</string>
+    <string name="toast_error_prefix">오류: %s</string>
+    <string name="toast_tasker_mute_applied">Tasker 연동: 카메라 무음 적용됨</string>
+    <string name="toast_tasker_sound_restored">Tasker 연동: 카메라 소리 활성화됨</string>
+    <string name="toast_tasker_permission_error">Tasker 연동 오류: 시스템 설정 변경 권한이 없습니다</string>
+    <string name="toast_tasker_error_prefix">Tasker 연동 오류: %s</string>
+    <string name="toast_auto_mute_applied">자동화 연동: 카메라 무음 적용됨</string>
+    <string name="toast_auto_sound_restored">자동화 연동: 카메라 소리 활성화됨</string>
+    <string name="toast_auto_permission_error">자동화 연동 오류: 시스템 설정 변경 권한이 없습니다</string>
+    <string name="toast_auto_error_prefix">자동화 연동 오류: %s</string>
+    <string name="toast_boot_mute_applied">기기 부팅 시 자동 무음 적용됨</string>
+    <string name="toast_test_home_success">[테스트 성공] 홈 버튼 액션을 실행했습니다</string>
+    <string name="toast_test_home_not_running">접근성 서비스가 실행 중이지 않습니다</string>
+    <string name="toast_boot_auto_apply_enabled">기기 부팅 시 자동 무음 활성화됨</string>
+    <string name="toast_boot_auto_apply_disabled">기기 부팅 시 자동 무음 비활성화됨</string>
+    <string name="toast_cannot_open_sound_settings">소리 설정을 열 수 없습니다</string>
+    <string name="toast_copied_to_clipboard">복사됨: %s</string>
+
+    <!-- Sound Modes -->
+    <string name="sound_mode_silent">무음</string>
+    <string name="sound_mode_vibrate">진동</string>
+    <string name="sound_mode_normal">소리 모드</string>
+
+    <!-- Ethics and Legal Notice -->
+    <string name="notice_title">소중히 여기는 가치 &amp; 이용 안내</string>
+    <string name="notice_desc">Galax-Shh는 촬영 가능 여부를 판단하는 앱이 아니며, 셔터 소리 전환을 지원하는 유틸리티입니다. 촬영자와 주변 사람 모두를 배려하는 책임 있는 사용을 지향합니다.</string>
+    <string name="notice_item1_title">① [예상 이용 상황] 주변을 위한 배려</string>
+    <string name="notice_item1_body">무음 촬영이 조건인 스포츠 관람(골프 갤러리 등), 소리에 민감한 동물/반려동물 촬영, 잠든 아기나 반려동물을 깨우지 않고자 할 때, 촬영이 허가된 조용한 시설에서의 배려.</string>
+    <string name="notice_item2_title">② [소중히 여기는 가치] 셔터 소리의 의의</string>
+    <string name="notice_item2_body">셔터음은 주변에 촬영 사실을 알리고 무단 촬영을 억제하는 중요한 역할을 합니다. 본 앱은 그 의의를 존중하며, 촬영이 허가된 장소에서의 조용한 에티켓 준수를 돕습니다.</string>
+    <string name="notice_item3_title">③ [이용 안내] 불법 행위 및 도촬 금지</string>
+    <string name="notice_item3_body">도촬 등 불법 행위에 대한 사용은 금지됩니다. 화장실·탈의실 등 사생활 보호 장소에서의 촬영은 엄격히 금지됩니다. 소리가 나지 않는다고 촬영이 허가된 것은 아닙니다. 법령과 시설 규칙을 확인하고 동의를 구한 뒤 책임 있게 사용해 주십시오.</string>
+
+    <!-- FAQ -->
+    <string name="faq_title">자주 묻는 질문 및 해결법 (FAQ)</string>
+    <string name="faq_collapse">접기</string>
+    <string name="faq_expand">펼치기</string>
+    <string name="faq_q1">Q. OS 업데이트 후 셔터 소리가 다시 납니다</string>
+    <string name="faq_a1">시스템 업데이트나 보안 패치로 인해 셔터음 설정이 기본값으로 초기화될 수 있습니다. 앱에서 다시 \'무음 적용\' 버튼을 눌러주세요. \'기기 부팅 시 자동 무음\'을 켜두시면 편리합니다.</string>
+    <string name="faq_q2">Q. 설정을 변경했는데도 카메라 소리가 납니다</string>
+    <string name="faq_a2">① 카메라 앱이 화면에 켜져 있는 동안에는 변경사항이 즉시 반영되지 않습니다. 다른 화면으로 전환(홈으로 이동 등)하면 즉시 반영됩니다 (퀵 설정 타일 사용 시 접근성 서비스를 통해 자동으로 홈 화면으로 이동하여 즉시 적용됩니다).\n② Galaxy 구조상 셔터음 무음 설정은 \'시스템 음량\'에 연동됩니다. 진동/무음 모드이거나 시스템 음량이 0이어야 완전히 무음이 됩니다 (앱에서 무음 적용 시 시스템 음량이 0으로 자동 조절되며 복원 시 원래 음량으로 복구됩니다).\n③ 향후 OS 업데이트에 따라 동작이 변경될 수 있습니다.</string>
+    <string name="faq_q3">Q. 접근성 서비스(홈 버튼 연동)의 목적과 보안성은?</string>
+    <string name="faq_a3">카메라 실행 중 퀵 설정 타일 조작 시 자동으로 홈 화면으로 이동하여 카메라를 백그라운드로 전환하고 무음 변경을 확실히 적용하기 위한 기능입니다. 화면 내용 읽기 권한이 전혀 없어 개인정보와 배터리 소모 걱정 없이 안전합니다.</string>
+    <string name="faq_q4">Q. 설정 변경 실패 또는 오류가 표시됩니다</string>
+    <string name="faq_a4">Android 6.0 이상에서는 \'시스템 설정 수정\' 권한이 필요합니다. 경고 카드의 \'설정 열고 권한 허용\'에서 쓰기 권한을 켜주세요.</string>
+    <string name="faq_q5">Q. 앱을 삭제(언인스톨)할 때 주의할 점은? (자동으로 복원되나요?)</string>
+    <string name="faq_a5">Android OS의 보안 사양상, 앱이 스스로 삭제되는 순간을 감지하여 코드를 자동 실행하는 것은 불가능합니다. 따라서 삭제 전 반드시 앱 내에서 \'셔터 소리를 기본값으로 복원\'을 실행해 주십시오.\n만약 복원하지 않고 삭제한 경우, 앱을 다시 설치하여 음소거를 해제하거나 ADB 명령어(adb shell settings put system csc_pref_camera_forced_shuttersound_key 1)를 실행하여 언제든지 복구할 수 있습니다.</string>
+
+    <!-- Uninstall & Restore Card -->
+    <string name="uninstall_card_title">삭제 전 설정 초기화 및 복원</string>
+    <string name="uninstall_card_desc">[중요] Android OS의 보안 사양상, 앱 삭제 시 자동으로 설정을 복원할 수 없습니다. 앱을 삭제하기 전에 반드시 아래 버튼을 눌러 셔터 소리를 기본값(소리 켬)으로 복원해 주십시오.</string>
+    <string name="uninstall_card_btn_restore">셔터 소리를 기본값으로 복원</string>
+    <string name="uninstall_card_btn_uninstall">설정 복원 후 삭제 화면으로 이동</string>
+    <string name="uninstall_card_remedy_hint">※ 복원하지 않고 삭제한 경우, 앱을 다시 설치하여 음소거를 해제하거나 ADB 명령어로 복원할 수 있습니다.</string>
+    <string name="toast_defaults_restored">셔터 소리와 시스템 음량을 기본 상태로 복원했습니다.</string>
+
+    <!-- Permission Required Card -->
+    <string name="permission_card_title">시스템 설정 수정 권한이 필요합니다</string>
+    <string name="permission_card_desc">Galaxy 기기에서 셔터음 설정을 변경하려면 \'시스템 설정 수정\' 권한이 필요합니다. 버튼을 눌러 설정을 열고 권한을 허용해주세요.</string>
+    <string name="permission_card_btn">설정 열고 권한 허용하기</string>
+
+    <!-- Main Status Card -->
+    <string name="status_muted_active">카메라 무음: 활성</string>
+    <string name="status_sound_active">카메라 소리: 활성 (일반)</string>
+    <string name="status_csc_muted_desc">셔터음: 무음 설정 중</string>
+    <string name="status_csc_sound_desc">셔터음: 일반 소리 설정 중</string>
+    <string name="btn_apply_mute">무음 적용</string>
+    <string name="btn_restore_sound">무음 해제</string>
+
+    <!-- Sound Mode Guide -->
+    <string name="sound_guide_title">사운드 모드 감지 및 가이드</string>
+    <string name="sound_badge_device_mode">기기 모드</string>
+    <string name="sound_badge_system_vol">시스템 음량</string>
+    <string name="sound_status_silent_ok">◎ 현재 카메라 셔터음이 완전히 무음입니다</string>
+    <string name="sound_status_warning_vol">▲ 무음 설정 중이나 시스템 음량이 켜져 있어 소리가 납니다. 진동/무음 모드로 변경하거나 시스템 음량을 0으로 설정하세요.</string>
+    <string name="sound_status_sound_on">※ 카메라 소리가 활성화되어 있어 정상적으로 셔터음이 발생합니다.</string>
+    <string name="sound_guide_explanation">[동작 원리] Galaxy 기기에서 셔터음 무음 설정은 \'시스템 음량\'과 연동되는 구조입니다. 진동/무음 모드로 설정하거나 시스템 음량을 0으로 맞추면 완전 무음이 됩니다.</string>
+    <string name="btn_open_sound_settings">기기 소리 설정 열기</string>
+
+    <!-- Integrations Card -->
+    <string name="integration_title">외부 연동 및 빠른 실행</string>
+    <string name="tab_quick_settings">빠른 설정</string>
+    <string name="tab_shortcuts">단축키</string>
+    <string name="tab_automation">자동화 연동</string>
+    <string name="qs_desc">알림창 빠른 설정 패널에 다음 3가지 타일을 배치할 수 있습니다:</string>
+    <string name="qs_tile1_title">① 무음 전환</string>
+    <string name="qs_tile1_desc">무음 중과 소리 켬 2가지 아이콘이 상태에 따라 자동 전환</string>
+    <string name="qs_tile2_title">② 카메라 무음</string>
+    <string name="qs_tile2_desc">확실하게 무음을 직접 적용</string>
+    <string name="qs_tile3_title">③ 카메라 소리 켬</string>
+    <string name="qs_tile3_desc">확실하게 일반 소리로 복원</string>
+    <string name="qs_a11y_notice_title">카메라 실행 중 홈 버튼 자동 탭 연동</string>
+    <string name="qs_a11y_notice_desc">기본 카메라 실행 중 타일을 탭하면 무음 설정을 즉시 적용하기 위해 자동으로 홈 화면으로 이동합니다.</string>
+    <string name="qs_edit_hint">※ 알림창을 두 번 아래로 쓸어내린 후 \'편집\'(연필 또는 점 3개 아이콘)에서 타일을 추가하세요.</string>
+    <string name="shortcuts_desc">홈 화면의 \'Galax-Shh\' 아이콘을 길게 누르면 3가지 단축키가 팝업됩니다:</string>
+    <string name="shortcuts_item1_desc">백그라운드에서 즉시 토글 전환</string>
+    <string name="shortcuts_item2_desc">백그라운드에서 즉시 무음 적용</string>
+    <string name="shortcuts_item3_desc">백그라운드에서 즉시 소리 활성화</string>
+    <string name="shortcuts_drag_hint">※ 길게 누른 메뉴 항목을 홈 화면으로 드래그하면 독립된 무음 버튼 아이콘으로 배치할 수 있습니다. One UI \'모드 및 루틴\'의 바로가기 동작에서도 선택 가능합니다.</string>
+    <string name="automation_intro">Tasker, MacroDroid, 모드 및 루틴 등의 자동화 앱에서 호출할 수 있습니다.</string>
+    <string name="automation_tasker_title">● Tasker 플러그인 지원</string>
+    <string name="automation_tasker_desc">Tasker의 \'작업 추가\' -> \'플러그인\' 목록에서 본 앱을 선택하고 ①무음 전환 ②카메라 무음 ③카메라 소리 켬 중 선택하여 설정할 수 있습니다.</string>
+    <string name="automation_broadcast_title">● MacroDroid / 브로드캐스트 인텐트 전송 (탭하여 복사)</string>
+    <string name="action_copy">복사</string>
+
+    <!-- Accessibility Home Service Card -->
+    <string name="a11y_card_title">홈 버튼 연동 (접근성)</string>
+    <string name="a11y_status_running">활성 및 실행 중</string>
+    <string name="a11y_status_waiting">연결 대기 중</string>
+    <string name="a11y_status_disabled">비활성화됨</string>
+    <string name="a11y_card_desc">기본 카메라 실행 중 퀵 설정 타일을 탭했을 때 설정 변경을 즉시 반영하기 위해 홈 화면으로 자동 이동합니다.</string>
+    <string name="a11y_running_info">◎ 접근성 서비스가 활성화되어 있습니다. 카메라 실행 중 타일 조작 시 홈 버튼 누름이 자동으로 실행됩니다.</string>
+    <string name="a11y_not_running_info">※ 활성화되지 않아도 인텐트 기반 홈 이동이 동작하지만, 접근성을 활성화하면 더 빠르고 확실하게 전환됩니다.</string>
+    <string name="btn_open_a11y_settings">접근성 설정 열기</string>
+    <string name="btn_check_a11y_settings">설정 확인</string>
+    <string name="btn_test_home">홈 동작 테스트</string>
+
+    <!-- Boot Auto Apply Card -->
+    <string name="boot_card_title">기기 부팅 시 자동 무음</string>
+    <string name="boot_card_desc">기기 재부팅 완료 시 백그라운드에서 무음을 자동으로 다시 적용합니다</string>
+
+    <!-- Battery Optimization Card -->
+    <string name="battery_card_title">배터리 설정 (딥슬립 방지)</string>
+    <string name="battery_status_unrestricted">제한 없음 (권장)</string>
+    <string name="battery_status_optimized">최적화 중 (제한됨)</string>
+    <string name="battery_card_desc">Galaxy 기기에서는 며칠이 지나면 백그라운드 앱이 \'절전 상태(딥슬립)\'로 전환되어 부팅 시 자동 무음이나 퀵 타일 설정 변경이 지연될 수 있습니다. \'제한 없음\'으로 설정하면 항상 안정적으로 작동합니다.</string>
+    <string name="btn_set_battery_unrestricted">배터리 사용량을 \'제한 없음\'으로 설정</string>
+    <string name="battery_unrestricted_active_desc">◎ 배터리 사용량이 \'제한 없음\'으로 설정되어 있습니다. 딥슬립으로 인한 지연이나 제한을 받지 않습니다.</string>
+
+    <!-- System Diagnosis Card -->
+    <string name="diag_card_title">시스템 진단 정보</string>
+    <string name="diag_device_model">기기 모델</string>
+    <string name="diag_os_version">OS 버전</string>
+    <string name="diag_target_sdk">동작 모드</string>
+    <string name="diag_target_sdk_value">Target SDK 22 (호환 모드)</string>
+    <string name="diag_csc_key">설정 키</string>
+    <string name="diag_csc_value">셔터음 상태</string>
+    <string name="diag_csc_unset">미설정</string>
+    <string name="diag_permission">설정 변경 권한</string>
+    <string name="diag_permission_granted">허용됨</string>
+    <string name="diag_permission_not_granted">미허용</string>
+
+    <!-- Tasker Configuration Screen -->
+    <string name="tasker_plugin_title">Galax-Shh 카메라 무음 설정</string>
+    <string name="tasker_config_title">Tasker 플러그인 설정</string>
+    <string name="tasker_cancel">취소</string>
+    <string name="tasker_select_action_header">실행할 작업을 선택하세요</string>
+    <string name="tasker_action_toggle_title">무음 토글 전환</string>
+    <string name="tasker_action_toggle_desc">현재 무음 상태를 반전합니다</string>
+    <string name="tasker_action_mute_on_title">카메라 무음</string>
+    <string name="tasker_action_mute_on_desc">카메라 셔터음을 무음으로 설정합니다</string>
+    <string name="tasker_action_mute_off_title">카메라 소리 켬</string>
+    <string name="tasker_action_mute_off_desc">일반 셔터음 설정으로 복원합니다</string>
+    <string name="tasker_btn_save">설정 저장 후 완료</string>
+
+    <!-- EULA / Terms of Service Dialog -->
+    <string name="eula_dialog_title">이용 시 유의사항 (반드시 읽어주세요)</string>
+    <string name="eula_warning_badge">최초 확인사항</string>
+    <string name="eula_intro">Galax-Shh는 촬영이 허가된 장소에서 주변을 배려하여 셔터 소리를 전환하는 유틸리티입니다. 이용 전 다음 사항을 확인하고 동의해 주십시오.</string>
+    <string name="eula_section1_title">① 불법 촬영 및 도촬 행위 절대 금지</string>
+    <string name="eula_section1_body">도촬 등 불법·유해 행위 사용을 엄격히 금지합니다. 관련 법령에 의해 엄중 처벌됩니다. 화장실, 탈의실, 목욕탕 등 프라이버시가 보호되어야 하는 장소에서 절대 사용하지 마십시오.</string>
+    <string name="eula_section2_title">② 규칙 준수 및 본인 동의, 촬영 매너</string>
+    <string name="eula_section2_body">소리가 나지 않는 것이 촬영 허가를 의미하지 않습니다. 법률 및 시설·주최자 규칙을 확인하고, 인물 촬영 시 필요에 따라 동의를 얻으십시오.</string>
+    <string name="eula_section3_title">③ 동작 환경 및 자기 책임 (면책 조항)</string>
+    <string name="eula_section3_body">기기 시스템 설정을 변경하여 동작하므로 OS나 지역에 따라 동작하지 않을 수 있습니다. 이용은 본인 책임이며 개발자는 책임을 지지 않습니다.</string>
+    <string name="eula_checkbox_label">위의 이용 조건 및 금지사항을 모두 확인하였으며, 불법 행위 없이 책임과 매너를 지켜 사용할 것에 동의합니다</string>
+    <string name="eula_btn_agree">동의하고 이용 시작하기</string>
+    <string name="eula_btn_decline">동의하지 않음 (앱 종료)</string>
+    <string name="toast_eula_required">이용약관 및 법령 준수 동의가 필요합니다. 앱을 열어 동의해주세요.</string>
+    <string name="notification_eula_required_title">Galax-Shh: 이용약관 동의 필요</string>
+    <string name="notification_eula_required_desc">카메라 무음 기능을 사용하려면 앱을 열어 이용약관에 동의해주세요.</string>
+</resources>

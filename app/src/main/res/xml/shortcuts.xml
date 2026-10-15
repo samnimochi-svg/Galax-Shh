@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="shortcut_toggle"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_toggle"
+        android:shortcutShortLabel="@string/shortcut_toggle_short"
+        android:shortcutLongLabel="@string/shortcut_toggle_long">
+        <intent
+            android:action="com.aistudio.galaxshh.action.TOGGLE"
+            android:targetPackage="com.aistudio.galaxshh.zpqm"
+            android:targetClass="com.example.ShortcutExecutionActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="shortcut_mute_on"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_mute_on"
+        android:shortcutShortLabel="@string/shortcut_mute_on_short"
+        android:shortcutLongLabel="@string/shortcut_mute_on_long">
+        <intent
+            android:action="com.aistudio.galaxshh.action.MUTE_ON"
+            android:targetPackage="com.aistudio.galaxshh.zpqm"
+            android:targetClass="com.example.ShortcutExecutionActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="shortcut_mute_off"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_mute_off"
+        android:shortcutShortLabel="@string/shortcut_mute_off_short"
+        android:shortcutLongLabel="@string/shortcut_mute_off_long">
+        <intent
+            android:action="com.aistudio.galaxshh.action.MUTE_OFF"
+            android:targetPackage="com.aistudio.galaxshh.zpqm"
+            android:targetClass="com.example.ShortcutExecutionActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

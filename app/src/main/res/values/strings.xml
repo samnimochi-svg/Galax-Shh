@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Galax-Shh</string>
+    <string name="app_subtitle">Switch shutter sound according to the situation</string>
+    <string name="app_header_subtitle">Switch shutter sound according to the situation</string>
+    <string name="action_refresh">Reload</string>
+    <string name="toast_reloaded">Status reloaded</string>
+
+    <!-- Tiles -->
+    <string name="tile_toggle_label">Toggle Mute</string>
+    <string name="tile_mute_on_label">Camera Mute</string>
+    <string name="tile_mute_off_label">Camera Sound On</string>
+    <string name="tile_sub_muted">Muted (0)</string>
+    <string name="tile_sub_unmuted">Sound On (1)</string>
+    <string name="tile_sub_volume_active">System Vol (%d)</string>
+    <string name="tile_sub_mute_applied">Mute Active</string>
+    <string name="tile_sub_mute_unapplied">Not Applied</string>
+    <string name="tile_sub_sound_active">Sound Active</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_toggle_short">Toggle Mute</string>
+    <string name="shortcut_toggle_long">Toggle Camera Mute</string>
+    <string name="shortcut_mute_on_short">Mute Camera</string>
+    <string name="shortcut_mute_on_long">Camera Mute</string>
+    <string name="shortcut_mute_off_short">Sound On</string>
+    <string name="shortcut_mute_off_long">Camera Sound</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Galax-Shh Status Notifications</string>
+    <string name="notification_channel_desc">Displays current shutter sound status and execution results</string>
+    <string name="notification_status_muted_title">Shutter Sound: Muted</string>
+    <string name="notification_status_muted_desc">Camera shutter sound is currently disabled (Muted)</string>
+    <string name="notification_status_sound_on_title">Shutter Sound: Sound On</string>
+    <string name="notification_status_sound_on_desc">Camera shutter sound is currently enabled (Normal)</string>
+    <string name="notification_status_warning_vol_title">⚠️ Shutter Sound Active (System Vol: %d)</string>
+    <string name="notification_status_warning_vol_desc">CSC mute is enabled, but shutter sound will sound due to system volume (%d)!</string>
+    <string name="notification_status_muted_detail">Shutter sound is disabled. Safe to shoot.</string>
+    <string name="notification_status_sound_on_detail">Shutter sound will be played when taking photos.</string>
+    <string name="notification_status_muted_subtext">Muted (Silent)</string>
+    <string name="notification_status_warning_subtext">⚠️ Sound Active (Volume Warning)</string>
+    <string name="notification_status_sound_on_subtext">Normal (Sound On)</string>
+    <string name="notification_action_mute_vol">Mute Volume</string>
+    <string name="notification_action_restore_sound">Sound On</string>
+    <string name="notification_action_apply_mute">Mute Camera</string>
+    <string name="notification_action_toggle">Toggle</string>
+    <string name="notif_setting_title">Galax-Shh Status Notification (Real-time Sync)</string>
+    <string name="notif_setting_desc">Detects in-app changes, automation apps (Tasker/Modes &amp; Routines), and hardware volume / ringer mode changes in real time to immediately update the status notification.</string>
+    <string name="notif_setting_persistent_switch">Always show in notification bar</string>
+    <string name="notif_setting_persistent_on">Always active on lock screen &amp; notification panel</string>
+    <string name="notif_setting_persistent_off">Persistent notification display is OFF</string>
+    <string name="btn_mute_system_volume_guarantee">Mute System Volume (Guarantees Full Silence)</string>
+    <string name="notif_setting_active_badge">Real-time Sync Active</string>
+    <string name="notif_setting_refresh_btn">Refresh Notification</string>
+    <string name="toast_notif_refreshed">Status notification refreshed</string>
+    <string name="nav_control">Mute</string>
+    <string name="nav_integration">Integrations</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_guide">Guide</string>
+    <string name="foldable_dual_pane_label">Galaxy Fold Optimized Dual Pane</string>
+    <string name="notification_mute_applied">Camera mute applied</string>
+    <string name="notification_sound_restored">Camera sound restored</string>
+    <string name="notification_error">[Galax-Shh] Failed to write settings</string>
+    <string name="notification_permission_required_title">Galax-Shh: Permission Required</string>
+    <string name="notification_permission_required_desc">Please grant permission to modify system settings</string>
+    <string name="notification_error_title">Galax-Shh: Error</string>
+    <string name="error_settings_update_failed">Failed to update system settings</string>
+    <string name="error_unknown">An unknown error occurred</string>
+
+    <!-- Setup Notifications -->
+    <string name="notification_channel_setup_name">Galax-Shh Setup &amp; Stability Alerts</string>
+    <string name="notification_channel_setup_desc">Guides for battery optimization and accessibility service setup</string>
+    <string name="notif_battery_setup_title">[Important] Set Battery Usage to Unrestricted</string>
+    <string name="notif_battery_setup_desc">Tap to allow Unrestricted battery to prevent auto-mute failure after reboot due to deep sleep.</string>
+    <string name="notif_a11y_setup_title">Configure Home Button Integration for Camera</string>
+    <string name="notif_a11y_setup_desc">Tap to turn ON Galax-Shh accessibility service to instantly apply tile actions while camera is open.</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_label">Galax-Shh Home Button Integration</string>
+    <string name="accessibility_service_desc">Navigates to the Home screen when tapping Quick Settings tiles while camera is active to immediately apply shutter sound settings.</string>
+
+    <!-- Toasts & Execution Messages -->
+    <string name="toast_mute_applied_title">Camera Muted</string>
+    <string name="toast_sound_restored_title">Camera Shutter Sound On</string>
+    <string name="toast_sys_vol_muted">System Sound: 0</string>
+    <string name="toast_sys_vol_restored">System Sound: Restored</string>
+    <string name="toast_camera_navigated_home">Returned to Home to apply changes</string>
+    <string name="toast_camera_restart_needed">Restart camera app to apply changes</string>
+    <string name="toast_mute_success_suffix"></string>
+    <string name="toast_permission_required">Permission to modify system settings is required</string>
+    <string name="toast_error_prefix">Error: %s</string>
+    <string name="toast_tasker_mute_applied">Tasker: Camera mute applied</string>
+    <string name="toast_tasker_sound_restored">Tasker: Camera sound enabled</string>
+    <string name="toast_tasker_permission_error">Tasker error: Permission to modify system settings is missing</string>
+    <string name="toast_tasker_error_prefix">Tasker error: %s</string>
+    <string name="toast_auto_mute_applied">Automation: Camera mute applied</string>
+    <string name="toast_auto_sound_restored">Automation: Camera sound enabled</string>
+    <string name="toast_auto_permission_error">Automation error: Permission to modify system settings is missing</string>
+    <string name="toast_auto_error_prefix">Automation error: %s</string>
+    <string name="toast_boot_mute_applied">Auto-mute applied on device boot</string>
+    <string name="toast_test_home_success">[Test Success] Executed home button action</string>
+    <string name="toast_test_home_not_running">Accessibility service is not running</string>
+    <string name="toast_boot_auto_apply_enabled">Auto-mute on device boot enabled</string>
+    <string name="toast_boot_auto_apply_disabled">Auto-mute on device boot disabled</string>
+    <string name="toast_cannot_open_sound_settings">Could not open sound settings</string>
+    <string name="toast_copied_to_clipboard">Copied: %s</string>
+
+    <!-- Sound Modes -->
+    <string name="sound_mode_silent">Silent</string>
+    <string name="sound_mode_vibrate">Vibrate</string>
+    <string name="sound_mode_normal">Sound</string>
+
+    <!-- Ethics and Legal Notice -->
+    <string name="notice_title">Our Values &amp; Terms of Use</string>
+    <string name="notice_desc">Galax-Shh is not an app to determine whether photography is permitted, but a tool to help adjust shutter sounds. It aims for responsible usage considerate of both photographers and bystanders.</string>
+    <string name="notice_item1_title">1. [Intended Situations] Consideration for Others</string>
+    <string name="notice_item1_body">Sports requiring silence (e.g. golf galleries), sensitive wildlife or pets, sleeping babies, and quiet venues where photography is permitted.</string>
+    <string name="notice_item2_title">2. [What We Value] The Role of Shutter Sounds</string>
+    <string name="notice_item2_body">Shutter sounds inform surroundings and deter unauthorized photography. This app respects that role while supporting quiet etiquette where photography is permitted.</string>
+    <string name="notice_item3_title">3. [Terms of Use] Prohibition of Unlawful Acts</string>
+    <string name="notice_item3_body">Use for voyeurism or illegal activities is strictly prohibited. Never use in private spaces (restrooms, changing rooms). Absence of sound does not equal permission to photograph. Comply with laws and rules.</string>
+
+    <!-- FAQ -->
+    <string name="faq_title">Frequently Asked Questions (FAQ)</string>
+    <string name="faq_collapse">Collapse</string>
+    <string name="faq_expand">Expand</string>
+    <string name="faq_q1">Q. Shutter sound returned after OS update</string>
+    <string name="faq_a1">System or security updates may reset shutter sound settings to default. Tap \'Apply Mute\' in the app again. Enabling \'Auto-Mute on Boot\' is recommended.</string>
+    <string name="faq_q2">Q. Camera still makes sound after changing setting</string>
+    <string name="faq_a2">1. While the camera app is in the foreground, changes do not take effect immediately. Leave the camera app (e.g. return to Home) to apply settings. Using the Quick Settings tile automatically navigates to Home via Accessibility.\n2. On Galaxy devices, shutter sound mute links to system volume. The device must be in Vibrate/Silent mode or System Volume at 0 (the app automatically sets System Volume to 0 when muting and restores it when unmuting).\n3. Future OS updates may change this behavior.</string>
+    <string name="faq_q3">Q. Purpose and safety of Accessibility Service (Home Button)</string>
+    <string name="faq_a3">It automatically returns to the Home screen when tapping tiles while the camera is open to apply mute settings instantly. It has zero screen text reading permission, consuming zero battery and keeping privacy 100% secure.</string>
+    <string name="faq_q4">Q. Failed to change settings or error displayed</string>
+    <string name="faq_a4">On Android 6.0+, \'Modify system settings\' permission is required. Open Settings via the warning card and enable the permission.</string>
+    <string name="faq_q5">Q. What should I do before uninstalling? (Does it restore automatically?)</string>
+    <string name="faq_a5">Due to Android OS security restrictions, no app can detect its own uninstallation or execute code during removal. Therefore, please make sure to restore the shutter sound to default inside this app before uninstalling.\nIf you have already uninstalled without restoring, you can reinstall the app and unmute, or run the ADB command (adb shell settings put system csc_pref_camera_forced_shuttersound_key 1) to restore it at any time.</string>
+
+    <!-- Uninstall & Restore Card -->
+    <string name="uninstall_card_title">Reset Settings Before Uninstall</string>
+    <string name="uninstall_card_desc">[Important] Due to Android OS security architecture, apps cannot automatically restore settings upon uninstallation. Before uninstalling Galax-Shh, please tap the button below to restore the camera shutter sound to its default state.</string>
+    <string name="uninstall_card_btn_restore">Restore Shutter Sound to Default</string>
+    <string name="uninstall_card_btn_uninstall">Restore &amp; Open Uninstall Screen</string>
+    <string name="uninstall_card_remedy_hint">* If uninstalled without restoring, you can reinstall the app and turn off mute, or run the ADB command to restore defaults.</string>
+    <string name="toast_defaults_restored">Restored shutter sound and system volume to default (enabled).</string>
+
+    <!-- Permission Required Card -->
+    <string name="permission_card_title">System Settings Permission Required</string>
+    <string name="permission_card_desc">Permission to modify system settings is required to change shutter sound settings on Galaxy devices. Tap the button to open settings and grant permission.</string>
+    <string name="permission_card_btn">Open Settings &amp; Grant Permission</string>
+
+    <!-- Main Status Card -->
+    <string name="status_muted_active">Camera Mute: Active</string>
+    <string name="status_sound_active">Camera Sound: Active (Normal)</string>
+    <string name="status_csc_muted_desc">Shutter Sound: Muted</string>
+    <string name="status_csc_sound_desc">Shutter Sound: Normal</string>
+    <string name="btn_apply_mute">Apply Mute</string>
+    <string name="btn_restore_sound">Disable Mute</string>
+
+    <!-- Sound Mode Guide -->
+    <string name="sound_guide_title">Sound Mode Detection &amp; Guide</string>
+    <string name="sound_badge_device_mode">Device Mode</string>
+    <string name="sound_badge_system_vol">System Volume</string>
+    <string name="sound_status_silent_ok">Camera shutter sound is completely silent now</string>
+    <string name="sound_status_warning_vol">Shutter sound is muted but system volume is active. Please switch to Vibrate/Silent or set system volume to 0.</string>
+    <string name="sound_status_sound_on">Camera sound is active, shutter sound will play as normal.</string>
+    <string name="sound_guide_explanation">[Specification] On Galaxy devices, camera mute links shutter sound to System Volume. Switching to Vibrate/Silent or setting System Volume to 0 results in total silence.</string>
+    <string name="btn_open_sound_settings">Open Device Sound Settings</string>
+
+    <!-- Integrations Card -->
+    <string name="integration_title">Integrations &amp; Quick Controls</string>
+    <string name="tab_quick_settings">Quick Settings</string>
+    <string name="tab_shortcuts">Shortcuts</string>
+    <string name="tab_automation">Automation</string>
+    <string name="qs_desc">You can add the following 3 tiles to your notification Quick Settings panel:</string>
+    <string name="qs_tile1_title">1. Toggle Mute</string>
+    <string name="qs_tile1_desc">Automatically toggles between Muted (Shh icon) and Sound Active (Camera icon)</string>
+    <string name="qs_tile2_title">2. Camera Mute</string>
+    <string name="qs_tile2_desc">Directly applies camera mute</string>
+    <string name="qs_tile3_title">3. Camera Sound On</string>
+    <string name="qs_tile3_desc">Restores normal shutter sound</string>
+    <string name="qs_a11y_notice_title">Automatic Home Button Press while Camera is Open</string>
+    <string name="qs_a11y_notice_desc">When tapping a tile while the stock camera is open, the app automatically navigates to the Home screen to immediately activate the mute setting.</string>
+    <string name="qs_edit_hint">* Swipe down the notification shade twice and tap \'Edit\' (pencil icon or 3-dots) to add tiles.</string>
+    <string name="shortcuts_desc">Long-press the \'Galax-Shh\' icon on your Home screen to access 3 quick shortcuts:</string>
+    <string name="shortcuts_item1_desc">Instantly toggle in the background</string>
+    <string name="shortcuts_item2_desc">Instantly mute in the background</string>
+    <string name="shortcuts_item3_desc">Instantly enable sound in the background</string>
+    <string name="shortcuts_drag_hint">* Drag shortcut items onto your Home screen to create standalone buttons. Also available in Modes &amp; Routines shortcut actions.</string>
+    <string name="automation_intro">Trigger via automation apps such as Tasker, MacroDroid, or Modes &amp; Routines.</string>
+    <string name="automation_tasker_title">● Tasker Plugin Support</string>
+    <string name="automation_tasker_desc">Select Galax-Shh under Tasker \'Add Action\' -> \'Plugin\', and choose between Toggle, Mute ON, or Sound ON.</string>
+    <string name="automation_broadcast_title">● MacroDroid / Broadcast Intent (Tap to copy)</string>
+    <string name="action_copy">Copy</string>
+
+    <!-- Accessibility Home Service Card -->
+    <string name="a11y_card_title">Home Button Integration (Accessibility)</string>
+    <string name="a11y_status_running">Active &amp; Running</string>
+    <string name="a11y_status_waiting">Connecting</string>
+    <string name="a11y_status_disabled">Disabled</string>
+    <string name="a11y_card_desc">Automatically returns to the Home screen when tapping tiles while camera is open, immediately applying shutter sound settings.</string>
+    <string name="a11y_running_info">Accessibility service is active. Home button press will be executed automatically when tapping tiles while camera is open.</string>
+    <string name="a11y_not_running_info">* Intent-based navigation works without this, but enabling accessibility makes screen transition faster and more reliable.</string>
+    <string name="btn_open_a11y_settings">Open Accessibility Settings</string>
+    <string name="btn_check_a11y_settings">Check Settings</string>
+    <string name="btn_test_home">Test Home Action</string>
+
+    <!-- Boot Auto Apply Card -->
+    <string name="boot_card_title">Auto-Mute on Device Boot</string>
+    <string name="boot_card_desc">Automatically re-applies mute in the background upon device boot</string>
+
+    <!-- Battery Optimization Card -->
+    <string name="battery_card_title">Battery Settings (Deep Sleep Prevention)</string>
+    <string name="battery_status_unrestricted">Unrestricted (Recommended)</string>
+    <string name="battery_status_optimized">Optimized (Restricted)</string>
+    <string name="battery_card_desc">On Galaxy devices, background apps may enter \'Deep Sleep\' after a few days, causing auto-mute on boot or tile toggling to fail. Setting to \'Unrestricted\' ensures reliable operation.</string>
+    <string name="btn_set_battery_unrestricted">Set Battery Usage to \'Unrestricted\'</string>
+    <string name="battery_unrestricted_active_desc">Battery usage is set to \'Unrestricted\'. The app is protected from deep sleep delays or restrictions.</string>
+
+    <!-- System Diagnosis Card -->
+    <string name="diag_card_title">System Diagnostic Information</string>
+    <string name="diag_device_model">Device Model</string>
+    <string name="diag_os_version">OS Version</string>
+    <string name="diag_target_sdk">Operation Mode</string>
+    <string name="diag_target_sdk_value">Target SDK 22 (Compatibility Mode)</string>
+    <string name="diag_csc_key">Setting Key</string>
+    <string name="diag_csc_value">Shutter Sound Status</string>
+    <string name="diag_csc_unset">Not set</string>
+    <string name="diag_permission">Modify Settings Permission</string>
+    <string name="diag_permission_granted">Granted</string>
+    <string name="diag_permission_not_granted">Not Granted</string>
+
+    <!-- Tasker Configuration Screen -->
+    <string name="tasker_plugin_title">Galax-Shh Camera Mute Setting</string>
+    <string name="tasker_config_title">Tasker Plugin Settings</string>
+    <string name="tasker_cancel">Cancel</string>
+    <string name="tasker_select_action_header">Select the action to execute</string>
+    <string name="tasker_action_toggle_title">Toggle Mute</string>
+    <string name="tasker_action_toggle_desc">Invert current mute state</string>
+    <string name="tasker_action_mute_on_title">Camera Mute</string>
+    <string name="tasker_action_mute_on_desc">Forces camera shutter sound off</string>
+    <string name="tasker_action_mute_off_title">Camera Sound On</string>
+    <string name="tasker_action_mute_off_desc">Restores normal camera shutter sound</string>
+    <string name="tasker_btn_save">Save Settings &amp; Done</string>
+
+    <!-- EULA / Terms of Service Dialog -->
+    <string name="eula_dialog_title">Terms of Use (Please Read Carefully)</string>
+    <string name="eula_warning_badge">Initial Confirmation</string>
+    <string name="eula_intro">Galax-Shh is a utility to switch camera shutter sounds for consideration in permitted situations. Please confirm and agree to the following terms before proceeding.</string>
+    <string name="eula_section1_title">1. Strict Prohibition of Illegal / Voyeuristic Acts</string>
+    <string name="eula_section1_body">Use for voyeurism or any unlawful acts is strictly prohibited and criminally punishable. Never use in areas requiring strict privacy (restrooms, locker rooms, etc.).</string>
+    <string name="eula_section2_title">2. Rules Compliance &amp; Consent</string>
+    <string name="eula_section2_body">The absence of a shutter sound does not imply permission to take photos. Always follow facility rules, applicable laws, and obtain consent when photographing individuals.</string>
+    <string name="eula_section3_title">3. Operating Environment &amp; Disclaimer</string>
+    <string name="eula_section3_body">This tool modifies system settings and may not function depending on OS or region. Use at your own risk; the developer assumes no liability.</string>
+    <string name="eula_checkbox_label">I have read and agree to all terms and prohibitions, and will use this app responsibly without engaging in illegal acts.</string>
+    <string name="eula_btn_agree">Agree &amp; Start Using</string>
+    <string name="eula_btn_decline">Decline (Exit App)</string>
+    <string name="toast_eula_required">Terms of Service agreement is required. Please open the app and accept.</string>
+    <string name="notification_eula_required_title">Galax-Shh: Terms Agreement Required</string>
+    <string name="notification_eula_required_desc">Please open the app and accept the Terms of Service to enable camera mute features.</string>
+</resources>

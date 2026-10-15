@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Galax-Shh</string>
+    <string name="app_subtitle">場面に合わせて、シャッター音を切り替える</string>
+    <string name="app_header_subtitle">場面に合わせてシャッター音を切り替える</string>
+    <string name="action_refresh">再読込</string>
+    <string name="toast_reloaded">最新状態を再読込しました</string>
+
+    <!-- Tiles -->
+    <string name="tile_toggle_label">消音切替</string>
+    <string name="tile_mute_on_label">カメラ消音</string>
+    <string name="tile_mute_off_label">カメラ音有効</string>
+    <string name="tile_sub_muted">消音中</string>
+    <string name="tile_sub_unmuted">音あり</string>
+    <string name="tile_sub_volume_active">音量あり: %d</string>
+    <string name="tile_sub_mute_applied">消音適用中</string>
+    <string name="tile_sub_mute_unapplied">未適用</string>
+    <string name="tile_sub_sound_active">通常音</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_toggle_short">消音切替</string>
+    <string name="shortcut_toggle_long">消音切替</string>
+    <string name="shortcut_mute_on_short">カメラ消音</string>
+    <string name="shortcut_mute_on_long">カメラ消音</string>
+    <string name="shortcut_mute_off_short">カメラ音有効</string>
+    <string name="shortcut_mute_off_long">カメラ音有効</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Galax-Shh 状態通知</string>
+    <string name="notification_channel_desc">消音切替や現在のシャッター音状態を表示します</string>
+    <string name="notification_status_muted_title">シャッター音 消音中</string>
+    <string name="notification_status_muted_desc">現在カメラのシャッター音は消音（無効）に設定されています</string>
+    <string name="notification_status_sound_on_title">シャッター音 音あり</string>
+    <string name="notification_status_sound_on_desc">現在カメラのシャッター音は通常（有効）に設定されています</string>
+    <string name="notification_status_warning_vol_title">⚠️ シャッター音 音あり (システム音量: %d)</string>
+    <string name="notification_status_warning_vol_desc">CSC消音は有効ですが、システム音量(%d)のためシャッター音が鳴ります！</string>
+    <string name="notification_status_muted_detail">シャッター音は無効です。安心して撮影できます。</string>
+    <string name="notification_status_sound_on_detail">撮影時にシャッター音が鳴ります。</string>
+    <string name="notification_status_muted_subtext">消音中 (完全無音)</string>
+    <string name="notification_status_warning_subtext">⚠️ 音あり (音量注意)</string>
+    <string name="notification_status_sound_on_subtext">通常 (音あり)</string>
+    <string name="notification_action_mute_vol">音量を消音</string>
+    <string name="notification_action_restore_sound">音ありに戻す</string>
+    <string name="notification_action_apply_mute">消音を適用</string>
+    <string name="notification_action_toggle">消音切替</string>
+    <string name="notif_setting_title">Galax-Shh 状態通知 (リアルタイム同期)</string>
+    <string name="notif_setting_desc">クイックパネルの切替だけでなく、アプリ内の変更、TaskerやModes &amp; Routines等の自動化アプリ、本体音量ボタンやマナーモード変更をリアルタイムに検知して状態通知を即座に同期更新します。</string>
+    <string name="notif_setting_persistent_switch">通知バーに常時表示</string>
+    <string name="notif_setting_persistent_on">通知バー・ロック画面に常時表示中</string>
+    <string name="notif_setting_persistent_off">通知バー常時表示はOFF</string>
+    <string name="btn_mute_system_volume_guarantee">システム音を消音 (完全消音を保証)</string>
+    <string name="notif_setting_active_badge">リアルタイム同期 有効</string>
+    <string name="notif_setting_refresh_btn">通知を更新</string>
+    <string name="toast_notif_refreshed">状態通知を更新しました</string>
+    <string name="nav_control">消音</string>
+    <string name="nav_integration">外部連携</string>
+    <string name="nav_settings">設定・安定化</string>
+    <string name="nav_guide">ガイド・FAQ</string>
+    <string name="foldable_dual_pane_label">Galaxy Z Fold 最適化 2画面表示</string>
+    <string name="notification_mute_applied">カメラ消音を適用しました</string>
+    <string name="notification_sound_restored">カメラ音を有効化しました</string>
+    <string name="notification_error">【Galax-Shh】設定の書き込みに失敗しました</string>
+    <string name="notification_permission_required_title">Galax-Shh: 権限が必要です</string>
+    <string name="notification_permission_required_desc">システム設定の変更権限を許可してください</string>
+    <string name="notification_error_title">Galax-Shh: エラー</string>
+    <string name="error_settings_update_failed">システム設定の更新に失敗しました</string>
+    <string name="error_unknown">不明なエラーが発生しました</string>
+
+    <!-- Setup Notifications -->
+    <string name="notification_channel_setup_name">Galax-Shh 初期設定・安定化案内</string>
+    <string name="notification_channel_setup_desc">ディープスリープ防止やユーザー補助設定への誘導通知</string>
+    <string name="notif_battery_setup_title">【重要】バッテリー使用を「制限なし」に設定</string>
+    <string name="notif_battery_setup_desc">ディープスリープによる消音自動適用の失敗を防ぐため、タップして「制限なし」を許可してください。</string>
+    <string name="notif_a11y_setup_title">カメラ起動中のホーム連携を設定</string>
+    <string name="notif_a11y_setup_desc">カメラ起動中のタイル切替を即時反映させるため、タップしてGalax-Shhのユーザー補助を「ON」に設定してください。</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_label">Galax-Shh ホームボタン連携</string>
+    <string name="accessibility_service_desc">標準カメラアプリ起動中にクイック設定パネルのタイルを操作した際、消音設定を直ちに有効化するために自動でホーム画面へ移動します。</string>
+
+    <!-- Toasts & Execution Messages -->
+    <string name="toast_mute_applied_title">カメラ消音中</string>
+    <string name="toast_sound_restored_title">カメラのシャッター音あり</string>
+    <string name="toast_sys_vol_muted">システム音: 0</string>
+    <string name="toast_sys_vol_restored">システム音: 復帰</string>
+    <string name="toast_camera_navigated_home">有効化のためホーム画面へ移動しました</string>
+    <string name="toast_camera_restart_needed">有効化のためカメラアプリを再起動してください</string>
+    <string name="toast_mute_success_suffix"></string>
+    <string name="toast_permission_required">システム設定の変更権限が必要です</string>
+    <string name="toast_error_prefix">エラー: %s</string>
+    <string name="toast_tasker_mute_applied">Tasker連携: カメラ消音を適用しました</string>
+    <string name="toast_tasker_sound_restored">Tasker連携: カメラ音を有効化しました</string>
+    <string name="toast_tasker_permission_error">Tasker連携エラー: システム設定変更権限がありません</string>
+    <string name="toast_tasker_error_prefix">Tasker連携エラー: %s</string>
+    <string name="toast_auto_mute_applied">自動化連携: カメラ消音を適用しました</string>
+    <string name="toast_auto_sound_restored">自動化連携: カメラ音を有効化しました</string>
+    <string name="toast_auto_permission_error">自動化連携エラー: システム設定変更権限がありません</string>
+    <string name="toast_auto_error_prefix">自動化連携エラー: %s</string>
+    <string name="toast_boot_mute_applied">端末起動時の自動消音を適用しました</string>
+    <string name="toast_test_home_success">【テスト成功】ホームボタンアクションを実行しました</string>
+    <string name="toast_test_home_not_running">ユーザー補助サービスが開始されていません</string>
+    <string name="toast_boot_auto_apply_enabled">端末起動時の自動消音を有効化しました</string>
+    <string name="toast_boot_auto_apply_disabled">端末起動時の自動消音を無効化しました</string>
+    <string name="toast_cannot_open_sound_settings">サウンド設定を開けませんでした</string>
+    <string name="toast_copied_to_clipboard">コピーしました: %s</string>
+
+    <!-- Sound Modes -->
+    <string name="sound_mode_silent">サイレント</string>
+    <string name="sound_mode_vibrate">バイブレーション</string>
+    <string name="sound_mode_normal">通常モード</string>
+
+    <!-- Ethics and Legal Notice -->
+    <string name="notice_title">【大切にしていること &amp; ご利用にあたって】</string>
+    <string name="notice_desc">Galax-Shh は撮影の可否を判断するアプリではなく、シャッター音の切り替えを支援するツールです。撮影する人にも、撮影される可能性のある人にも配慮した、責任ある使い方を目指しています。</string>
+    <string name="notice_item1_title">①【想定される利用場面】周囲への配慮</string>
+    <string name="notice_item1_body">無音撮影が条件のスポーツ観戦（ゴルフのギャラリー等）、野鳥・動物・ペットなど音に敏感な被写体の撮影、眠っている赤ちゃんやペットを起こしたくないとき、撮影が許可されている静かな施設での周囲への配慮に活用してください。</string>
+    <string name="notice_item2_title">②【大切にしていること】シャッター音の意義</string>
+    <string name="notice_item2_body">日本国内で販売される多くの端末では、盗撮防止などの観点からシャッター音が鳴る仕様になっています。周囲に撮影を知らせ、無断撮影を抑止する意義を軽視するものではありません。撮影が認められている場所での静かな環境やルール遵守のために本ツールをご活用ください。</string>
+    <string name="notice_item3_title">③【ご利用にあたって】迷惑・違法行為の禁止</string>
+    <string name="notice_item3_body">盗撮などの迷惑行為・違法行為への使用は禁止します（迷惑防止条例や性的姿態等撮影罪等で処罰される犯罪です）。トイレ・更衣室・浴室などプライバシーが守られるべき場所での使用は厳禁です。音が鳴らないことは撮影許可を意味しません。法令・施設のルールを守り、自己責任でご利用ください。</string>
+
+    <!-- FAQ -->
+    <string name="faq_title">よくある質問・対処法</string>
+    <string name="faq_collapse">折りたたむ</string>
+    <string name="faq_expand">展開する</string>
+    <string name="faq_q1">Q. OSアップデート後にシャッター音が鳴るようになった</string>
+    <string name="faq_a1">システムの更新やセキュリティパッチの適用により、シャッター音の設定が標準状態にリセットされることがあります。本アプリから再度「消音を適用」を押してください。「端末起動時の自動消音」を有効にしておくと便利です。</string>
+    <string name="faq_q2">Q. 設定を切り替えたのにカメラの音が鳴る</string>
+    <string name="faq_a2">① カメラアプリが画面に表示されている間は設定が反映されません。ホーム画面に戻る等、カメラアプリから一度離れることで設定が反映されます。カメラ起動中にクイック設定タイルを操作した場合は、ユーザー補助サービスによって自動でホーム画面へ戻ります。\n② Galaxy端末の仕様上、シャッター音の消音設定はシステム音量に連動します。端末がバイブレーションやサイレントモード、またはシステム音量0になっている必要があります。本アプリで消音適用時、システム音が1以上の場合は自動で0に調整され、シャッター音を通常に戻す際に元の音量へ復帰します。\n③ 今後のOSアップデート等の仕様変更により、本機能による切り替えができなくなる可能性があります。</string>
+    <string name="faq_q3">Q. ユーザー補助（ホームボタン連携）の目的と安全性は？</string>
+    <string name="faq_a3">カメラ起動中のクイック設定操作時に、自動でホーム画面へ戻ることでカメラを一旦離脱させ、消音設定を確実に反映させるための機能です。画面情報の取得や操作の監視は一切行わないため、プライバシーの保護やバッテリー消費の心配なく安心してお使いいただけます。</string>
+    <string name="faq_q4">Q. 設定の変更に失敗する・エラーが表示される</string>
+    <string name="faq_a4">Android 6.0以降では「システム設定の変更」許可が必要です。警告カードの「設定画面を開いて許可」から本アプリへの書き込み許可をONにしてください。</string>
+    <string name="faq_q5">Q. アンインストールする時の注意点は？（自動で戻る？）</string>
+    <string name="faq_a5">Android OSの仕様上、いかなるアプリも自身のアンインストールを検知して自動で処理を実行することはできません（アンインストール時の自動フックはOSにより禁止されています）。そのため、アンインストールを行う前に必ずアプリ内の「消音を解除」または「シャッター音を初期値に戻す」を実行してください。\nもし元に戻さずにアンインストールしてしまった場合は、本アプリを再度インストールして消音を解除するか、ADBコマンド（adb shell settings put system csc_pref_camera_forced_shuttersound_key 1）を実行することでいつでも通常音に復旧できます。</string>
+
+    <!-- Uninstall & Restore Card -->
+    <string name="uninstall_card_title">アンインストール前の初期化・設定復元</string>
+    <string name="uninstall_card_desc">【重要】Android OSのセキュリティ仕様上、アプリのアンインストール時に自動で設定を元に戻すことはできません。本アプリをアンインストールする前に、必ず下のボタンでシャッター音を初期値（通常音）に戻してください。</string>
+    <string name="uninstall_card_btn_restore">シャッター音を初期値に戻す（設定復元）</string>
+    <string name="uninstall_card_btn_uninstall">設定を復元してアンインストール画面へ</string>
+    <string name="uninstall_card_remedy_hint">※ 設定を戻さずにアンインストールしてしまった場合は、アプリを再インストールして消音解除するか、ADBコマンド等で初期値に戻すことができます。</string>
+    <string name="toast_defaults_restored">シャッター音とシステム音量を初期状態（有効）に戻しました</string>
+
+    <!-- Permission Required Card -->
+    <string name="permission_card_title">システム設定変更の権限が必要です</string>
+    <string name="permission_card_desc">シャッター音の設定を変更するには「システム設定の変更」権限が必要です。ボタンを押して設定画面を開き、許可を有効にしてください。</string>
+    <string name="permission_card_btn">設定画面を開いて許可する</string>
+
+    <!-- Main Status Card -->
+    <string name="status_muted_active">カメラ消音: 有効</string>
+    <string name="status_sound_active">カメラ音: 有効 (通常)</string>
+    <string name="status_csc_muted_desc">シャッター音: 消音設定中</string>
+    <string name="status_csc_sound_desc">シャッター音: 通常音設定中</string>
+    <string name="btn_apply_mute">消音を適用</string>
+    <string name="btn_restore_sound">消音を解除</string>
+
+    <!-- Sound Mode Guide -->
+    <string name="sound_guide_title">サウンドモード検知 &amp; ガイド</string>
+    <string name="sound_badge_device_mode">端末モード</string>
+    <string name="sound_badge_system_vol">システム音量</string>
+    <string name="sound_status_silent_ok">◎ 現在、カメラシャッター音は完全に無音です</string>
+    <string name="sound_status_warning_vol">▲ 消音設定中ですがシステム音量が出ているため音が鳴ります。マナーモードにするかシステム音量を0にしてください。</string>
+    <string name="sound_status_sound_on">※ カメラ音有効設定のため、通常通りシャッター音が鳴ります。</string>
+    <string name="sound_guide_explanation">【仕様解説】Galaxy端末では、シャッター音の消音設定が「システム音量」に連動します。バイブレーションまたはサイレントモードにするか、システム音量を0にすることで完全に無音になります。</string>
+    <string name="btn_open_sound_settings">端末のサウンド設定を開く</string>
+
+    <!-- Integrations Card -->
+    <string name="integration_title">外部連携・クイック操作</string>
+    <string name="tab_quick_settings">クイック設定</string>
+    <string name="tab_shortcuts">ショートカット</string>
+    <string name="tab_automation">外部自動化</string>
+    <string name="qs_desc">通知バーのクイック設定パネルに以下3種類のタイルを配置できます：</string>
+    <string name="qs_tile1_title">① 消音切替</string>
+    <string name="qs_tile1_desc">消音中と音ありのアイコンが状態に応じて自動切替</string>
+    <string name="qs_tile2_title">② カメラ消音</string>
+    <string name="qs_tile2_desc">確実に消音を直接適用</string>
+    <string name="qs_tile3_title">③ カメラ音有効</string>
+    <string name="qs_tile3_desc">確実に通常のシャッター音を復元</string>
+    <string name="qs_a11y_notice_title">カメラ起動中のホームボタン自動連携</string>
+    <string name="qs_a11y_notice_desc">標準カメラ起動中にタイルを操作すると、消音設定を直ちに有効化するため、ユーザー補助によって自動でホーム画面に戻ります。</string>
+    <string name="qs_edit_hint">※ 通知バーを2回下にスワイプし、「︙」またはペンのアイコン（編集）からタイルを追加してください。</string>
+    <string name="shortcuts_desc">ホーム画面の「Galax-Shh」アイコンを長押しすると、3種類のショートカットがポップアップ表示されます：</string>
+    <string name="shortcuts_item1_desc">瞬時に状態を切替</string>
+    <string name="shortcuts_item2_desc">即座に消音を適用</string>
+    <string name="shortcuts_item3_desc">即座に通常のシャッター音を復元</string>
+    <string name="shortcuts_drag_hint">※ 長押しメニューの各項目を長押ししたままホーム画面にドラッグすると、単体の消音ボタンアイコンとして配置できます。「モードとルーチン」のショートカットアクションからも選択可能です。</string>
+    <string name="automation_intro">Tasker、MacroDroid、モードとルーチンなどの自動化アプリから呼び出せます。</string>
+    <string name="automation_tasker_title">● Tasker プラグイン対応</string>
+    <string name="automation_tasker_desc">Taskerの「タスク追加」→「プラグイン」一覧から本アプリを選択し、①消音切替 ②カメラ消音 ③カメラ音有効 の3つから選んで設定できます。</string>
+    <string name="automation_broadcast_title">● MacroDroid / 汎用インテント送信（タップでコピー）</string>
+    <string name="action_copy">コピー</string>
+
+    <!-- Accessibility Home Service Card -->
+    <string name="a11y_card_title">ホームボタン連携</string>
+    <string name="a11y_status_running">有効・稼働中</string>
+    <string name="a11y_status_waiting">接続待機中</string>
+    <string name="a11y_status_disabled">未有効化</string>
+    <string name="a11y_card_desc">標準カメラ起動中にクイック設定パネルのタイルを操作した際、設定変更を即時反映させるため、ユーザー補助機能を利用して自動でホーム画面へ移動します。</string>
+    <string name="a11y_running_info">◎ ユーザー補助サービスが有効です。カメラ起動中のタイル操作時に自動でホーム画面へ戻ります。</string>
+    <string name="a11y_not_running_info">※ 有効化されていない場合でもインテントによるホーム画面移動が動作しますが、ユーザー補助を有効にすることで画面遷移がより高速かつ確実になります。</string>
+    <string name="btn_open_a11y_settings">ユーザー補助設定を開く</string>
+    <string name="btn_check_a11y_settings">設定画面を確認</string>
+    <string name="btn_test_home">ホーム動作テスト</string>
+
+    <!-- Boot Auto Apply Card -->
+    <string name="boot_card_title">端末起動時の自動消音</string>
+    <string name="boot_card_desc">端末再起動完了時にバックグラウンドで消音を自動再適用します</string>
+
+    <!-- Battery Optimization Card -->
+    <string name="battery_card_title">バッテリー設定 (ディープスリープ対策)</string>
+    <string name="battery_status_unrestricted">制限なし (推奨)</string>
+    <string name="battery_status_optimized">最適化中 (制限あり)</string>
+    <string name="battery_card_desc">Galaxy端末では日数が経過するとバックグラウンドのアプリが「ディープスリープ」に入り、再起動時の消音自動適用やクイックタイルの設定変更に不備が出る場合があります。「制限なし」に設定しておくことで常に安定動作します。</string>
+    <string name="btn_set_battery_unrestricted">バッテリー使用を「制限なし」に設定</string>
+    <string name="battery_unrestricted_active_desc">◎ バッテリー使用は「制限なし」に設定されています。ディープスリープによる遅延や制限を受けません。</string>
+
+    <!-- System Diagnosis Card -->
+    <string name="diag_card_title">システム診断情報</string>
+    <string name="diag_device_model">端末モデル</string>
+    <string name="diag_os_version">OS バージョン</string>
+    <string name="diag_target_sdk">動作モード</string>
+    <string name="diag_target_sdk_value">Target SDK 22 (互換モード)</string>
+    <string name="diag_csc_key">設定キー</string>
+    <string name="diag_csc_value">シャッター音状態</string>
+    <string name="diag_csc_unset">未設定</string>
+    <string name="diag_permission">設定変更権限</string>
+    <string name="diag_permission_granted">許可済み</string>
+    <string name="diag_permission_not_granted">未許可</string>
+
+    <!-- Tasker Configuration Screen -->
+    <string name="tasker_plugin_title">Galax-Shh カメラ消音設定</string>
+    <string name="tasker_config_title">Taskerプラグイン設定</string>
+    <string name="tasker_cancel">キャンセル</string>
+    <string name="tasker_select_action_header">実行するアクションを選択してください</string>
+    <string name="tasker_action_toggle_title">消音トグル切替</string>
+    <string name="tasker_action_toggle_desc">現在の消音状態を反転します</string>
+    <string name="tasker_action_mute_on_title">カメラ消音</string>
+    <string name="tasker_action_mute_on_desc">カメラのシャッター音を消音化します</string>
+    <string name="tasker_action_mute_off_title">カメラ音有効</string>
+    <string name="tasker_action_mute_off_desc">通常のシャッター音設定に戻します</string>
+    <string name="tasker_btn_save">設定を保存して完了</string>
+
+    <!-- EULA / Terms of Service Dialog -->
+    <string name="eula_dialog_title">ご利用にあたって（必ずお読みください）</string>
+    <string name="eula_warning_badge">初回確認事項</string>
+    <string name="eula_intro">Galax-Shh は、撮影が許可された場面で周囲への配慮のためにシャッター音を切り替えるツールです。ご利用前に以下の利用条件および禁止事項を必ず確認し、同意してください。</string>
+    <string name="eula_section1_title">① 盗撮などの迷惑・違法行為への使用禁止</string>
+    <string name="eula_section1_body">盗撮などの迷惑行為・違法行為への使用は禁止します。盗撮は、迷惑防止条例や性的姿態等撮影罪などにより処罰され得る犯罪です。トイレ・更衣室・浴室など、プライバシーが特に守られるべき場所での撮影には使用しないでください。</string>
+    <string name="eula_section2_title">② ルール確認・本人の同意・撮影マナー</string>
+    <string name="eula_section2_body">音が鳴らないことは、撮影が許可されたことを意味しません。法律や施設・主催者のルールを確認し、人物を撮影する際は必要に応じて本人の同意を得てください。音を出すことが求められる場所では、そのルールに従ってください。</string>
+    <string name="eula_section3_title">③ 動作環境および自己責任（免責事項）</string>
+    <string name="eula_section3_body">端末のシステム設定を変更して動作します。端末・OS・地域設定によっては動作しない場合があります。ご利用は自己責任でお願いします。開発者は一切の責任を負いかねます。</string>
+    <string name="eula_checkbox_label">上記の利用条件および禁止事項をすべて確認し、盗撮・違法行為を行わず、責任とマナーを持って利用することに同意します</string>
+    <string name="eula_btn_agree">同意して利用を開始する</string>
+    <string name="eula_btn_decline">同意しない</string>
+    <string name="toast_eula_required">利用規約への同意が必要です。アプリを開いて同意してください。</string>
+    <string name="notification_eula_required_title">Galax-Shh: 利用規約への同意が必要です</string>
+    <string name="notification_eula_required_desc">カメラ消音機能を利用するには、アプリを開いて利用規約に同意してください。</string>
+</resources>
