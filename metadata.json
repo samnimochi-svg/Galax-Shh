@@ -1,0 +1,6 @@
+{
+  "name": "Galax-Shh",
+  "description": "Galaxy向け。撮影が許可された場面で、周囲への配慮のためにシャッター音を切り替えられるアプリです。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
